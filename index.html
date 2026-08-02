@@ -57,9 +57,9 @@
 
       <p class="hero-bio">
         MSc Computational Fluid Dynamics candidate at Cranfield University, on track
-        for distinction. I build the pipeline between high-fidelity simulation and
-        machine learning, designing custom ML systems from first principles at the
-        intersection of physics and data.
+        for distinction. I build validated AI-for-engineering tools that connect
+        geometry, CFD, uncertainty, optimisation, and deployment, from physics-informed
+        wing surrogates to open-source scientific solvers.
       </p>
 
       <div class="hero-ctas">
@@ -108,9 +108,9 @@
       <span>ANSYS Fluent</span><span class="dot">&middot;</span>
       <span>UCNS3D</span><span class="dot">&middot;</span>
       <span>PyTorch</span><span class="dot">&middot;</span>
-      <span>PINNs</span><span class="dot">&middot;</span>
+      <span>PiSA</span><span class="dot">&middot;</span>
       <span>DGCNN</span><span class="dot">&middot;</span>
-      <span>PhysicsNeMo</span><span class="dot">&middot;</span>
+      <span>ThermoPulseLBM</span><span class="dot">&middot;</span>
       <span>HPC</span><span class="dot">&middot;</span>
       <span>Turbulence Modelling</span><span class="dot">&middot;</span>
       <span>Python</span><span class="dot">&middot;</span>
@@ -126,9 +126,9 @@
       <span>ANSYS Fluent</span><span class="dot">&middot;</span>
       <span>UCNS3D</span><span class="dot">&middot;</span>
       <span>PyTorch</span><span class="dot">&middot;</span>
-      <span>PINNs</span><span class="dot">&middot;</span>
+      <span>PiSA</span><span class="dot">&middot;</span>
       <span>DGCNN</span><span class="dot">&middot;</span>
-      <span>PhysicsNeMo</span><span class="dot">&middot;</span>
+      <span>ThermoPulseLBM</span><span class="dot">&middot;</span>
       <span>HPC</span><span class="dot">&middot;</span>
       <span>Turbulence Modelling</span><span class="dot">&middot;</span>
       <span>Python</span><span class="dot">&middot;</span>
@@ -155,21 +155,21 @@
             I am an aerospace-trained engineer with deep expertise in computational
             fluid dynamics, turbulence modelling, and scientific machine learning.
             Currently completing my MSc in CFD at Cranfield, I design and build
-            custom ML systems in PyTorch and PyTorch Geometric: graph neural
-            networks, physics-informed models, calibrated validation workflows, and
+            scientific ML systems in PyTorch: graph-style aerodynamic surrogates,
+            physics-informed models, calibrated validation workflows, and
             deployment-facing tools.
           </p>
           <p class="about-para reveal">
             My work spans the full engineering and ML stack: from CAD geometry and mesh
-            generation through HPC solver execution, data extraction, and model
-            training, through to FastAPI/Gradio prototypes and evidence reports. I
-            approach hard problems with scientific rigour and build solutions that
-            show their assumptions, failure modes, and decision value.
+            generation through OpenFOAM, UCNS3D, LBM, HPC-style workflows, data extraction,
+            and model training, through to FastAPI/Gradio prototypes and evidence reports.
+            I approach hard problems with scientific rigour and build solutions that show
+            their assumptions, failure modes, and decision value.
           </p>
           <p class="about-para reveal">
             Actively seeking roles across scientific ML, applied AI, CFD engineering,
-            simulation, optimisation, engineering AI platforms, and data-heavy
-            technical teams where trust and usefulness matter as much as model score.
+            simulation, optimisation, engineering AI platforms, and data-heavy technical
+            teams where trust, speed, and physical credibility matter as much as model score.
           </p>
         </div>
 
@@ -219,11 +219,11 @@
       <div class="cv-grid">
         <article class="cv-panel cv-download reveal">
           <p class="cv-panel-kicker">Master CV</p>
-          <h3>Three-page general CV for AI, CFD, simulation, and engineering roles.</h3>
+          <h3>Two-page master CV for AI, CFD, simulation, and engineering roles.</h3>
           <p>
-            Built as a robust master version rather than a compressed two-page role
-            variant. It covers my education, work-authorisation note, scientific ML,
-            CFD validation, optimisation, product-facing AI, and leadership evidence.
+            Built as a portfolio-ready master version following Imperial-style CV guidance:
+            concise, black-and-white, evidence-led, and focused on scientific ML, CFD validation,
+            solver development, optimisation, deployment, and leadership evidence.
           </p>
           <div class="cv-actions">
             <a
@@ -254,11 +254,11 @@
         <article class="cv-panel reveal">
           <p class="cv-panel-kicker">Proof pillars</p>
           <ul class="cv-list">
-            <li>ClusterCount-AI4S: biomedical counting under domain shift</li>
-            <li>AeroGenic: graph, polar, and hybrid aerodynamic surrogates</li>
-            <li>OpenFOAM RANS validation and residual correction</li>
-            <li>63,393-design Pareto optimisation and CFD re-simulation queue</li>
-            <li>FastAPI, Gradio-style demos, reports, warnings, and traceability</li>
+            <li>AeroGenic and PiSA: physics-informed inverse design for 3D UAV wings</li>
+            <li>ThermoPulseLBM: C++20 LBM solver with serial, OpenMP, and OpenCL backends</li>
+            <li>ClusterCount-AI4S: validation-first scientific ML under blur and clustering</li>
+            <li>OpenFOAM RANS validation, residual correction, uncertainty, and GCI reasoning</li>
+            <li>FastAPI/Gradio demos, reports, warnings, and traceable engineering workflows</li>
           </ul>
         </article>
 
@@ -284,12 +284,12 @@
           <span class="cv-metric-label">ClusterCount synthetic held-out MAPE</span>
         </div>
         <div class="cv-metric reveal">
-          <span class="cv-metric-value">2.87%</span>
-          <span class="cv-metric-label">AeroGenic champion weighted MAPE</span>
+          <span class="cv-metric-value">0.16 ms</span>
+          <span class="cv-metric-label">PiSA complete GPU inference per design</span>
         </div>
         <div class="cv-metric reveal">
-          <span class="cv-metric-value">12</span>
-          <span class="cv-metric-label">Largest team led from concept to prototype</span>
+          <span class="cv-metric-value">67</span>
+          <span class="cv-metric-label">ThermoPulseLBM local tests passing</span>
         </div>
       </div>
     </div>
@@ -380,21 +380,22 @@
             <div class="project-top">
               <span class="project-num">01</span>
               <div class="project-tags">
-                <span>UCNS3D</span>
-                <span>Fortran</span>
-                <span>HLL/HLLC</span>
-                <span>MUSCL</span>
+                <span>PiSA</span>
+                <span>PyTorch</span>
+                <span>RANS</span>
+                <span>FastAPI</span>
               </div>
             </div>
-            <h3 class="project-title">Godunov Compressible<br />Flow Solver</h3>
+            <h3 class="project-title">AeroGenic Platform<br />&amp; PiSA Surrogate</h3>
             <p class="project-desc">
-              Benchmarked Godunov-type finite-volume methods for 1D and 2D compressible
-              Euler equations. Extended a Fortran solver with second-order MUSCL
-              reconstruction and HLL/HLLC Riemann solvers. Validated against Mach 3
-              forward-facing step and double Mach reflection on unstructured meshes in UCNS3D.
+              Thesis engineering-tool deployment for a physics-informed surrogate algorithm
+              supporting inverse-design optimisation of 3D UAV wings. It connects parametric
+              geometry, aerodynamic data, graph-style ML, uncertainty, residual correction,
+              OpenFOAM RANS validation, and FastAPI/Gradio deployment.
             </p>
             <div class="project-footer">
-              <span class="project-module">Numerical Methods for Compressible Flows</span>
+              <span class="project-module">0.16 ms GPU inference</span>
+              <span class="project-grade">76%</span>
             </div>
           </div>
         </article>
@@ -404,22 +405,22 @@
             <div class="project-top">
               <span class="project-num">02</span>
               <div class="project-tags">
-                <span>Fidelity Pointwise</span>
-                <span>RANS</span>
-                <span>k-&omega; SST</span>
-                <span>y<sup>+</sup>&asymp;1</span>
+                <span>C++20</span>
+                <span>LBM</span>
+                <span>OpenCL</span>
+                <span>OpenMP</span>
               </div>
             </div>
-            <h3 class="project-title">NASA Trap Wing<br />High-Quality Grid</h3>
+            <h3 class="project-title">ThermoPulseLBM<br />Scientific Solver</h3>
             <p class="project-desc">
-              Generated a high-fidelity unstructured hybrid mesh for the NASA Trapezoidal
-              High-Lift Wing following HiLiftPW-1 workshop guidelines at
-              Re&nbsp;=&nbsp;9.5&times;10<sup>6</sup>. Targeted wall-resolved RANS with
-              y<sup>+</sup>&nbsp;&asymp;&nbsp;1, structured boundary-layer inflation, and
-              wake-region refinement for accurate high-lift flow prediction.
+              Open-source style Lattice Boltzmann solver project with D2Q9 flow,
+              D2Q5 thermal/passive-scalar transport, serial, OpenMP and OpenCL backends,
+              CMake packaging, benchmark scripts, and validation against Poiseuille,
+              lid-driven cavity, Womersley and Graetz cases.
             </p>
             <div class="project-footer">
-              <span class="project-module">Grid Generation</span>
+              <span class="project-module">67 local tests passing</span>
+              <span class="project-grade">C++</span>
             </div>
           </div>
         </article>
@@ -429,23 +430,22 @@
             <div class="project-top">
               <span class="project-num">03</span>
               <div class="project-tags">
-                <span>DNS</span>
-                <span>MATLAB</span>
-                <span>FFT</span>
-                <span>Neural Networks</span>
+                <span>UCNS3D</span>
+                <span>DGCNN</span>
+                <span>SIREN</span>
+                <span>SolidWorks</span>
               </div>
             </div>
-            <h3 class="project-title">DNS Turbulent Channel<br />Flow Analysis</h3>
+            <h3 class="project-title">Pod Deployable UAV<br />Design Optimisation</h3>
             <p class="project-desc">
-              Processed high-fidelity DNS data of fully developed turbulent channel flow
-              at Re<sub>&tau;</sub>&nbsp;&asymp;&nbsp;180. Computed turbulence statistics
-              (RMS, skewness, kurtosis), performed FFT spectral analysis, and implemented
-              a feed-forward neural network to map velocity fields between instantaneous
-              spanwise planes, benchmarked against Lee &amp; Moser (2015).
+              Cranfield assessed group project awarded 82%, with 85% for the final
+              presentation. I coordinated task management in Notion, produced the preliminary
+              SolidWorks EDF fan model backbone, ran high-fidelity UCNS3D simulations, and
+              developed a physics-informed DGCNN FiLM-SIREN surrogate below 8.2% error.
             </p>
             <div class="project-footer">
-              <span class="project-module">Data Analysis &amp; Post-Processing</span>
-              <span class="project-grade">87%</span>
+              <span class="project-module">Cranfield group design project</span>
+              <span class="project-grade">82%</span>
             </div>
           </div>
         </article>
@@ -455,27 +455,27 @@
             <div class="project-top">
               <span class="project-num">04</span>
               <div class="project-tags">
-                <span>ANSYS Fluent</span>
-                <span>MATLAB</span>
-                <span>SIMPLE</span>
-                <span>PISO</span>
+                <span>OpenFOAM</span>
+                <span>RANS</span>
+                <span>GCI</span>
+                <span>y<sup>+</sup></span>
               </div>
             </div>
-            <h3 class="project-title">Laminar Flow CFD<br />vs Analytical Solution</h3>
+            <h3 class="project-title">OpenFOAM RANS<br />Validation Workflow</h3>
             <p class="project-desc">
-              Derived the analytical Poiseuille velocity profile from the Navier-Stokes
-              equations and validated against ANSYS Fluent simulations across three mesh
-              densities at Re&nbsp;=&nbsp;15. Benchmarked SIMPLE, SIMPLEC, PISO, and
-              COUPLE pressure-velocity coupling algorithms; confirmed second-order
-              convergence and quantified discretisation error via RMSE and MAE.
+              Built RANS validation cases for selected aerodynamic designs, applying
+              mesh-quality checks, y<sup>+</sup> control, coefficient stability, force extraction,
+              residual diagnostics, Grid Convergence Index reasoning, and automated
+              post-processing for engineering reports and stakeholder updates.
             </p>
             <div class="project-footer">
-              <span class="project-module">Intro to Fluid Mechanics &amp; Heat Transfer</span>
-              <span class="project-grade">87%</span>
+              <span class="project-module">CFD validation and automation</span>
+              <span class="project-grade">RANS</span>
             </div>
           </div>
         </article>
       </div>
+
     </div>
   </section>
 

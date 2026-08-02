@@ -1,265 +1,140 @@
 %----------------------------------------------------------
-% Thato Baruti - 3-page master CV
-% Broad version for AI, CFD, simulation, engineering, and data roles
+% Thato Baruti - Master CV for portfolio
+% Imperial-style two-page black-and-white CV
 %----------------------------------------------------------
-\documentclass[10pt, a4paper]{article}
+\documentclass[10pt,a4paper]{article}
 
+\input{glyphtounicode}
+\pdfgentounicode=1
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
+\usepackage[a4paper,top=0.92cm,bottom=0.86cm,left=1.16cm,right=1.16cm]{geometry}
 \usepackage{microtype}
-\usepackage[a4paper, top=1.05cm, bottom=1.05cm, left=1.18cm, right=1.18cm]{geometry}
 \usepackage{parskip}
-\setlength{\parskip}{2pt}
-\usepackage{xcolor}
-\definecolor{accent}{HTML}{037A68}
-\definecolor{dark}{HTML}{101615}
-\definecolor{mid}{HTML}{444444}
+\setlength{\parskip}{2.0pt}
 \usepackage{titlesec}
-\titleformat{\section}
-  {\color{accent}\bfseries\small}
-  {}{0em}{\MakeUppercase}
-  [\color{accent}\rule{\linewidth}{0.7pt}]
-\titlespacing{\section}{0pt}{6pt}{3pt}
 \usepackage{enumitem}
-\setlist[itemize]{
-  noitemsep,
-  topsep=1pt,
-  leftmargin=1.2em,
-  label={\textcolor{accent}{\textbullet}}
-}
-\usepackage{array}
-\usepackage{tabularx}
 \usepackage{hyperref}
-\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
-
+\hypersetup{colorlinks=true,urlcolor=black,linkcolor=black}
 \pagestyle{empty}
-\color{mid}
+\setlist[itemize]{leftmargin=1.08em,itemsep=1.05pt,topsep=1pt,parsep=0pt,partopsep=0pt,label={\scriptsize\textbullet}}
+\titleformat{\section}{\bfseries\small}{}{0em}{\MakeUppercase}[\vspace{-1pt}\rule{\linewidth}{0.42pt}]
+\titlespacing{\section}{0pt}{5.5pt}{2.0pt}
+\sloppy
 
 \begin{document}
+\fontsize{9.65}{10.95}\selectfont
 
-\noindent{\fontsize{24}{28}\selectfont\bfseries\color{dark} THATO BARUTI}
-
-\vspace{2pt}
-{\color{accent}\rule{\linewidth}{1.8pt}}
-\vspace{3pt}
-
-\noindent\small
-\textbf{\color{dark}+44 07759 037559}\enspace\textbar\enspace
-\href{mailto:tbofficial0508@gmail.com}{tbofficial0508@gmail.com}\enspace\textbar\enspace
-\href{https://github.com/tbofficial0508-jpg}{github.com/tbofficial0508-jpg}\enspace\textbar\enspace
-\href{https://www.linkedin.com/in/thato-baruti-63b290222/}{linkedin.com/in/thato-baruti}\enspace\textbar\enspace
-\href{https://tbofficial0508-jpg.github.io/ThatoBaruti619.github.io-/}{Portfolio}
-
-\textit{Scientific ML \& AI Engineering\enspace\textperiodcentered\enspace
-CFD / Simulation\enspace\textperiodcentered\enspace
-Surrogate Modelling\enspace\textperiodcentered\enspace
-Python / PyTorch\enspace\textperiodcentered\enspace
-Validation-First Product Builder}
-
-\textbf{Work authorisation note:} Current UK Student visa; eligible to self-fund the UK Graduate
-Route after MSc completion, so no employer sponsorship is required for the initial post-study period.
-\normalsize\vspace{3pt}
+\begin{center}
+{\fontsize{21.5}{23.5}\selectfont\textbf{THATO BARUTI}}\par
+\footnotesize +44 07759 037559 $\mid$ \href{mailto:tbofficial0508@gmail.com}{tbofficial0508@gmail.com} $\mid$ Cranfield, United Kingdom $\mid$
+\href{https://www.linkedin.com/in/thato-baruti-63b290222/}{LinkedIn} $\mid$
+\href{https://tbofficial0508-jpg.github.io/ThatoBaruti619.github.io-/}{Portfolio} $\mid$
+\href{https://github.com/tbofficial0508-jpg}{GitHub} $\mid$
+\href{https://github.com/tbofficial0508-jpg/cluster-count-ai4s}{ClusterCount-AI4S}
+\end{center}
+\vspace{-5pt}
 
 \section{Profile}
-
-AI and simulation engineer completing an MSc in Computational Fluid Dynamics at Cranfield
-University, with a BEng in Aerospace Engineering from the University of Sheffield. I build
-validated technical systems across scientific machine learning, CFD, optimisation, image analysis,
-and engineering decision support. My strongest pattern is taking an ambiguous technical problem
-from first principles to a usable artefact: data pipeline, model, baselines, tests, uncertainty,
-visual evidence, API or interface, and a clear explanation of where the system can and cannot be
-trusted.
-
-\section{What I Bring}
-
-\begin{itemize}
-  \item \textbf{Scientific ML and model reliability:} PyTorch/PyTorch Geometric models, graph neural
-        networks, PINN-style physics losses, uncertainty calibration, external stress tests,
-        failure-regime audits, and strict baseline comparisons.
-  \item \textbf{Simulation and engineering judgement:} OpenFOAM, ANSYS Fluent, UCNS3D, mesh
-        generation, RANS validation, DNS post-processing, aerodynamic design, and numerical-methods
-        reasoning.
-  \item \textbf{Product-minded AI delivery:} FastAPI and Gradio-style interfaces, JSON/CSV reports,
-        overlays, confidence warnings, GitHub documentation, Docker/CI exposure, and stakeholder
-        communication.
-  \item \textbf{Leadership under pressure:} led teams of 4 to 12 people in UAS, rocketry, and
-        high-altitude aircraft projects, with quantified improvements in stability, endurance,
-        drag, delivery speed, and manufactured prototype outcomes.
-\end{itemize}
+MSc Computational Fluid Dynamics student specialising in AI-for-engineering, CFD, scientific software and design optimisation. I build validated models and tools that connect physics, data, geometry, uncertainty and user-facing deployment, with a strong interest in roles across scientific ML, simulation, AI consulting, aerospace design and computational engineering.
 
 \section{Education}
+\textbf{Cranfield University} \textbf{(Distinction expected)} \hfill Sep 2025--Jun 2027 expected\par
+\textbf{MSc Computational Fluid Dynamics}. High-scoring modules include Data Analysis and Post-Processing 87\%, Fluid Mechanics and Heat Transfer 87\%, Numerical Modelling for Incompressible Flows 84\%, plus Grid Generation, Numerical Methods, Turbulence Modelling and High Performance Computing.
 
-\noindent\textbf{MSc Computational Fluid Dynamics}\hfill
-\textit{Oct 2025--Aug 2026 (Expected, on track for Distinction)}\\
-Cranfield University, UK\\
-{\small\textit{Data Analysis \& Post-Processing (87\%); Introduction to Fluid Mechanics \& Heat
-Transfer (87\%); Turbulence Modelling (72\%); Numerical Methods \& HPC; Grid Generation; Numerical
-Modelling.}}
+\textbf{University of Sheffield} \textbf{(2nd Class Honours)} \hfill Sep 2022--Jun 2025\par
+\textbf{BEng Aerospace Engineering}. Relevant study in Aerodynamic Design, CFD, Aircraft Dynamics and Control, Propulsion, Aerospace Design, CAD, MATLAB, project management and technical communication. Awarded the Botswana Government Top Achievers Scholarship and Sheffield International Undergraduate Scholarship.
 
-\smallskip
-\noindent\textbf{BEng Aerospace Engineering}\hfill\textit{Jun 2025}\\
-University of Sheffield, UK\\
-{\small\textit{Aerodynamic Design; Aircraft Dynamics \& Control; Aerospace Design; Project Management.}}
-
-\smallskip
-\noindent{\small Awards: Botswana Government Top Achievers Scholarship; University of Sheffield
-International Undergraduate Scholarship.}
-
-\section{Core Technical Skills}
-
-\noindent
-\begin{tabularx}{\linewidth}{@{} >{\bfseries\color{dark}}l X @{}}
-AI / ML & Python, PyTorch, PyTorch Geometric, scikit-learn, NumPy, model validation,
-graph neural networks, density models, uncertainty, baselines, failure analysis \\[2pt]
-Scientific SW & FastAPI, Gradio, Git/GitHub, Linux/HPC workflows, shell scripting exposure,
-CSV/JSON reporting, Docker/CI exposure, reproducible technical documentation \\[2pt]
-Simulation & OpenFOAM, ANSYS Fluent, UCNS3D, ParaView, Tecplot, Fidelity Pointwise,
-FluidX3D, RANS, DNS post-processing, turbulence statistics, mesh quality checks \\[2pt]
-Engineering & Aerodynamics, CFD validation, wing design, optimisation, UAS performance,
-force/moment analysis, experimental correlation, technical reporting \\[2pt]
-Developing & LLM and agentic AI workflows, cloud/MLOps, broader biomedical datasets,
-SQL/data engineering, and production CI/CD depth \\
-\end{tabularx}
-
-\section{Selected Technical Evidence}
-
-\noindent\textbf{ClusterCount-AI4S: Biomedical Cell-Counting Validation Framework}\hfill
-\textit{2026}\\
-\textit{Independent Study}
+\section{Scientific AI, CFD and Software Projects}
+\textbf{AeroGenic Platform and PiSA Surrogate Algorithm} \hfill Cranfield University thesis, 2025--ongoing
 \begin{itemize}
-  \item Built a validation-first biomedical image-analysis framework for automated cell counting
-        under clustering, blur, and domain shift, framing cell counting as a measurement-validity
-        problem rather than only a segmentation task.
-  \item Implemented complementary model paths: an interpretable ClusterCountModel regressor for
-        controlled operating-range benchmarking and a calibrated patchwise density pipeline for
-        external microscopy adaptation.
-  \item Evaluated on 300 held-out synthetic fluorescence-like images, achieving 4.67\% MAPE versus
-        31.71\% for a watershed baseline; error tightened to 4.45\% inside a moderate blur and
-        clustering envelope.
-  \item Stress-tested on a 37-image external slice derived from BioStudies S-BSST265, reducing
-        external MAPE to 34.3\% after scale-normalised patchwise inference and lightweight
-        calibration, while explicitly reporting remaining high-count and cross-regime failures.
-  \item Produced overlays, warnings, model-baseline disagreement, operating-range limits, tests,
-        Docker/CI-style packaging, and a report grounded in Cellpose, StarDist, CellProfiler,
-        BBBC resources, and uncertainty-under-shift literature.
+  \item Developed the engineering-tool deployment layer of my thesis Physics-informed Surrogate Algorithm for inverse-design optimisation of 3D UAV wings, connecting parametric geometry, aerodynamic data, PyTorch graph-style modelling, optimisation, validation and API/UI deployment.
+  \item Trained on a 300-case panel design space and anchored to RANS validation; complete GPU inference returns aerodynamic coefficients, uncertainty, surface pressure and decoded section geometry in 0.16 ms, about six orders faster than the matching 64-core RANS workflow.
+  \item Improved drag/lift accuracy by 76\% over a panel-method baseline and recovered held-out RANS surface pressure to 7.6\%, while documenting validation gates, residual-correction limits, uncertainty coverage and behaviour under unseen airfoil-family shift.
+  \item Built a FastAPI/Gradio tool for requirements, geometry import/export, prediction, confidence reporting and optimisation, translating research models into a usable engineering workflow for stakeholder review.
 \end{itemize}
 
-\noindent\textbf{AeroGenic: Scientific ML Platform for Aerodynamic Design}\hfill
-\textit{2025--Ongoing}\\
-\textit{MSc Research, Cranfield University}
+\textbf{ThermoPulseLBM Scientific Solver} \hfill Personal C++/HPC project, 2026
 \begin{itemize}
-  \item Built graph-based, polar-structured, and hybrid ML models in PyTorch/PyTorch Geometric for
-        aerodynamic coefficient prediction across wing design sweeps, combining geometry features,
-        conditioning vectors, message passing, physics-aware losses, and target-wise model selection.
-  \item Implemented the evidence spine: geometry-disjoint case-level splits, metadata-only baselines,
-        shared metrics, parity plots, slice diagnostics, split-conformal uncertainty calibration,
-        validation-case selection, model audits, and all-model reporting figures.
-  \item Delivered strict held-out evidence: MGN/MGNM reached 3.18\% MAPE for $C_L$, 2.60\% for
-        $C_D$, and 3.83\% for $C_{My}$; polar model improved $C_D$ to 2.49\%; target-wise champion
-        ensemble achieved 2.87\% deployment-weighted held-out MAPE.
-  \item Built deployment-facing FastAPI and Gradio-style interfaces that convert geometry and flight
-        requirements into traceable wing-design outputs, confidence scores, warnings, exported
-        geometry, and JSON reports.
+  \item Built a C++20 Lattice Boltzmann solver with D2Q9 flow, D2Q5 thermal/passive-scalar transport, serial, OpenMP and OpenCL backends, CMake packaging, benchmark scripts and 67 local tests passing.
+  \item Validated Poiseuille, lid-driven cavity, Womersley and Graetz benchmarks, including Poiseuille L2 error 4.9e-5, Ghia cavity deviations of 0.52--0.82\%, Womersley amplitude error 0.11\% and Graetz Nusselt error 0.23\%.
 \end{itemize}
 
-\noindent\textbf{OpenFOAM RANS Validation and Residual Correction}\hfill\textit{2025--Ongoing}\\
-\textit{Cranfield University HPC Infrastructure}
+\textbf{ClusterCount-AI4S Public GitHub Project} \hfill Personal AI-for-science project, 2026
 \begin{itemize}
-  \item Commissioned an automated RANS validation pipeline and fixed structural failures across
-        mesh generation, surface feature extraction, solver stability, force-object compatibility,
-        parallel decomposition, location-in-mesh selection, and remote-rank environment setup.
-  \item Managed a 32-case validation campaign with 29 returned CFD cases and 26 strict-pass evidence
-        cases, exposing the viscous drag gap inherited from lower-fidelity VLM-style labels.
-  \item Built grouped geometry-held-out residual correction layers against higher-fidelity CFD,
-        reducing corrected MAE to 0.0677 for $C_L$, 0.0104 for $C_D$, and 0.401 for $C_{My}$.
+  \item Built a validation-first microscopy image counting framework using Python, scikit-learn, synthetic controls, interpretable extremely randomized trees, overlays, model comparison and warning signals.
+  \item Achieved 4.67\% MAPE on 300 held-out synthetic microscopy images and 4.45\% MAPE inside a moderate blur/clustering envelope; reported operating-range limits, disagreement signals and external-data failure modes rather than hiding deployment risk.
 \end{itemize}
 
-\noindent\textbf{Requirement-Conditioned Pareto Optimisation}\hfill\textit{2025--Ongoing}\\
-\textit{Cranfield University}
+\textbf{OpenFOAM RANS Validation and CFD Workflow Automation} \hfill Cranfield University, 2025--ongoing
 \begin{itemize}
-  \item Implemented an optimisation gate over 63,393 candidate designs, retained 15,031 feasible
-        lift-band candidates, and extracted 1,012 non-dominated designs across drag, trim, lift
-        overshoot, span, and training-manifold risk.
-  \item Selected six representative designs for OpenFOAM re-simulation and used returned CFD results
-        to separate promising lift-band survivors from surrogate-exploitation failures.
+  \item Built OpenFOAM RANS validation cases for selected aerodynamic designs, applying mesh-quality checks, $y^+$ control, coefficient stability, force extraction, residual diagnostics and Grid Convergence Index reasoning.
+  \item Automated case preparation and post-processing support across multiple CFD runs, producing engineering reports, publication-style figures and supervisor/stakeholder updates.
 \end{itemize}
 
-\section{Additional Engineering and ML Experience}
+\newpage
 
-\noindent\textbf{DNS Turbulent Channel Flow and Neural Prediction}\hfill\textit{2025}\\
-\textit{Cranfield University, Data Analysis \& Post-Processing, 87\%}
+\section{Engineering Design and Team Projects}
+\textbf{Design Optimisation of Pod Deployable UAV} \hfill Cranfield University, 2026
 \begin{itemize}
-  \item Processed high-fidelity DNS turbulent-channel data at $Re_\tau \approx 180$, computing RMS,
-        skewness, kurtosis, spectra, and instantaneous-field relationships.
-  \item Trained a feed-forward neural network to map velocity fields between spanwise planes and
-        benchmarked outputs against held-out ground truth and Lee \& Moser style reference data.
+  \item Contributed to an assessed group design project awarded 82\%, with 85\% for the final presentation; coordinated task management in Notion and translated mission requirements into technical workstreams.
+  \item Developed a Physics-Informed DGCNN FiLM-SIREN surrogate for EDF-body aerodynamic prediction to single-digit error margins below 8.2\%, identifying initialization dilution as a failure mode and implementing a two-phase training protocol with spatially weighted physics regularisation.
+  \item Produced a preliminary SolidWorks design that became the backbone of the EDF fan model and supported high-fidelity UCNS3D simulations, balancing design intent, numerical evidence and presentation clarity.
 \end{itemize}
 
-\smallskip
-\noindent\textbf{Godunov Compressible-Flow Solver Benchmarking}\hfill\textit{2025}\\
-\textit{Cranfield University}
+\textbf{AeroMAP UAS Build} \hfill Performance Lead, University of Sheffield, Oct 2023--May 2024
 \begin{itemize}
-  \item Extended and benchmarked a Fortran finite-volume solver with MUSCL reconstruction and HLL/HLLC
-        Riemann solvers for 1D and 2D Euler equations, validating on Mach 3 forward-facing step and
-        double Mach reflection cases in UCNS3D.
+  \item Led simulation-led performance improvement across five aerodynamic and structural components using CAD iteration, ANSYS CFD, FEA and physical flight-test feedback.
+  \item Reported 25\% greater stability and 15\% greater endurance, balancing aerodynamic performance, structural practicality, manufacturability and testing evidence before recommending changes.
 \end{itemize}
 
-\smallskip
-\noindent\textbf{NASA Trap Wing High-Lift Grid Generation}\hfill\textit{2025}\\
-\textit{Cranfield University}
+\textbf{SunStratos High-Altitude Surveillance Glider} \hfill Aerostructures Lead, Oct 2023--Jul 2025
 \begin{itemize}
-  \item Generated high-quality hybrid meshes in Fidelity Pointwise for the NASA Trapezoidal High-Lift
-        Wing, targeting wall-resolved RANS with $y^+\approx 1$, boundary-layer inflation, and wake
-        refinement.
+  \item Led 12 students through airframe concept development, CAD modelling, structural integrity work, manufacturing planning and prototype delivery, improving delivery speed by 33\%.
+  \item Converted broad mission aims into component responsibilities, design reviews and build tasks, strengthening communication across aerodynamics, structures and manufacturing.
 \end{itemize}
 
-\smallskip
-\noindent\textbf{Local AI and Agentic Workflow Exploration}\hfill\textit{2026}\\
-\textit{Independent Learning}
+\textbf{UKSEDS National Rocketry Competition} \hfill Design Team Lead, Oct 2022--May 2023
 \begin{itemize}
-  \item Used LM Studio and local Gemma models to explore privacy-friendly LLM workflows for scientific
-        reporting, validation summaries, technical assistant behaviour, and tool-oriented AI patterns.
+  \item Owned the CFD-led design workflow from CAD geometry through meshing, solver setup, post-processing and technical reporting; reduced drag coefficient by 22\% and ranked Top 10 nationally among 30+ teams.
 \end{itemize}
 
-\section{Leadership and Team Delivery}
-
-\noindent\textbf{AeroMAP UAS Build}\hfill\textit{Oct 2023--May 2024}\\
-\textit{Performance Lead, University of Sheffield}
+\section{Programmes, Leadership and Additional Experience}
+\textbf{Orange Summer Challenge, Selected Young Talent - AI/ML Track} \hfill Jul 2026--present
 \begin{itemize}
-  \item Led a four-person performance team using simulation and test evidence to improve stability by
-        25\% and endurance by 15\%, translating design trade-offs for a multidisciplinary group.
+  \item Selected for Orange Digital Center Botswana's AI as a Business Accelerator programme, focused on applying AI/ML to real business challenges across fintech, energy, customer experience and generative AI.
 \end{itemize}
 
-\smallskip
-\noindent\textbf{SunStratos High-Altitude Surveillance Glider}\hfill\textit{Feb 2023--Jun 2024}\\
-\textit{Structures Lead, University of Sheffield}
+\textbf{Royal Aeronautical Society Student Affiliate} \hfill Oct 2025--present
 \begin{itemize}
-  \item Led a 12-member team from concept through manufactured prototype, improving delivery speed
-        by 33\% through task ownership, scheduling, and clear communication.
+  \item Build professional aerospace awareness through technical events, networking and continued learning across design, simulation and aircraft development.
 \end{itemize}
 
-\smallskip
-\noindent\textbf{UKSEDS National Rocketry Competition}\hfill\textit{Oct 2022--May 2023}\\
-\textit{Design Team Lead, University of Sheffield}
+\textbf{Sheffield Engineering Leadership Academy Cohort} \hfill Sep 2023--Jun 2025
 \begin{itemize}
-  \item Led aerodynamic analysis and design iteration, reduced drag coefficient by 22\%, and ranked
-        Top 10 nationally among 30+ UK university teams.
+  \item Developed leadership, project delivery and communication skills through a selective engineering leadership programme and multidisciplinary team activities.
 \end{itemize}
 
-\section{Role Fit}
+\textbf{Formula 1 Silverstone Steward, Sierra 1 Security Stewarding Ltd} \hfill Jun 2023
+\begin{itemize}
+  \item Used calm communication, radio coordination and judgement under pressure to guide spectators, resolve high-pressure queries and escalate safety issues at a major Formula 1 event.
+\end{itemize}
 
-\noindent
-\begin{tabularx}{\linewidth}{@{} >{\bfseries\color{dark}}l X @{}}
-Best fit now & Scientific ML engineer, applied ML engineer, CFD/simulation engineer, research
-engineer, surrogate-modelling engineer, AI-for-engineering platform builder, technical analyst \\[2pt]
-Strongest proof & ClusterCount-AI4S, AeroGenic, OpenFOAM validation, MGN/polar/hybrid models,
-Pareto optimisation, FastAPI/Gradio-style reporting, UAS/rocketry leadership \\[2pt]
-Working style & Evidence-driven, fast learner, strict about limitations, comfortable with ambiguous
-technical problems, able to explain complex systems to non-specialists \\[2pt]
-Next growth & Production cloud/MLOps, larger direct software-engineering codebases, LLM/agentic
-systems, broader biomedical AI, and industrial validation experience \\
-\end{tabularx}
+\section{Professional Development}
+\textbf{Technical training and portfolio preparation} \hfill 2023--2026
+\begin{itemize}
+  \item Completed Introduction to Tecplot and pyTecplot plus MATLAB Onramp; use Tecplot, ParaView, MATLAB and Python to convert simulation output into clear engineering evidence, plots and technical presentations.
+  \item Completed Cranfield climate and energy-transition study, strengthening interest in roles where simulation, AI and engineering judgement support net-zero design, renewable energy and resilience decisions.
+  \item Maintain public portfolio and GitHub evidence across AeroGenic, ThermoPulseLBM and ClusterCount, including project READMEs, validation notes, screenshots, reports and reproducible scripts where confidentiality allows.
+\end{itemize}
+\section{Technical Skills}
+\textbf{AI and data science:} PyTorch, PyTorch Geometric-style graph ML, scikit-learn, pandas, NumPy, model evaluation, supervised learning, uncertainty checks, residual correction, optimisation, validation dashboards, failure-slice diagnostics and responsible model-limit reporting.\par
+\textbf{Scientific software and deployment:} Python, C++20, MATLAB, Bash, Git/GitHub, FastAPI, Gradio, CMake, OpenMP, OpenCL, Linux/HPC workflows, Excel, PowerPoint, technical reports, demo outputs and reproducible benchmark scripts.\par
+\textbf{Simulation and design:} OpenFOAM, ANSYS Fluent/CFX exposure, UCNS3D, FluidX3D, VSPAERO/panel methods, finite-volume methods, LBM, RANS, heat transfer, turbulence modelling, mesh-quality checks, GCI, $y^+$, ParaView, Tecplot, SolidWorks, Fusion 360 and CAD geometry preparation.
+
+\section{Portfolio Themes}
+Current portfolio evidence spans physics-informed surrogate modelling, CFD validation, solver development, AI-for-science evaluation, UAV design optimisation, aerodynamic performance, technical communication and client-style demos. I am particularly interested in work where modern AI can accelerate engineering decisions while remaining transparent, validated and physically credible.
 
 \end{document}
