@@ -3,30 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Thato Baruti, CFD engineer, scientific ML builder, and physics-informed ML researcher." />
+  <meta name="description" content="Thato Baruti, CFD Engineer, Scientific ML, Physics-Informed AI" />
   <title>Thato Baruti</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Thato Baruti",
+      "jobTitle": "CFD and Scientific ML Engineer",
+      "email": "mailto:tbofficial0508@gmail.com",
+      "url": "https://tbofficial0508-jpg.github.io/ThatoBaruti619.github.io-/",
+      "sameAs": [
+        "https://github.com/ThatoBaruti619",
+        "https://www.linkedin.com/in/thato-baruti-63b290222/"
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Sheffield"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Cranfield University"
+        }
+      ],
+      "knowsAbout": [
+        "Computational Fluid Dynamics",
+        "OpenFOAM",
+        "ANSYS Fluent",
+        "RANS turbulence modelling",
+        "Scientific machine learning",
+        "Physics-informed neural networks",
+        "Graph neural networks",
+        "Surrogate modelling",
+        "Uncertainty quantification",
+        "Simulation optimisation",
+        "Engineering AI platforms"
+      ]
+    }
+  </script>
 </head>
 <body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
-      <a class="nav-logo" href="#hero">Thato Baruti</a>
+      <a class="nav-logo" href="#hero">TB</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#cv">CV</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <a href="mailto:tbofficial0508@gmail.com" class="nav-cta">Get in Touch</a>
-        </li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
   <section class="hero" id="hero">
+    <!-- CFD fluid flow background -->
     <video
       class="hero-video"
       src="tecplotanimation.mp4"
@@ -38,10 +83,11 @@
     ></video>
     <div class="hero-video-overlay" aria-hidden="true"></div>
 
-    <div class="hero-lines" aria-hidden="true"></div>
-    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-lines"    aria-hidden="true"></div>
+    <div class="hero-glow"     aria-hidden="true"></div>
     <div class="hero-baseline" aria-hidden="true"></div>
 
+    <!-- Left: text -->
     <div class="hero-text">
       <p class="hero-overline">Thato Baruti</p>
 
@@ -52,19 +98,19 @@
       </h1>
 
       <p class="hero-tagline">
-        CFD&nbsp;&nbsp;&middot;&nbsp;&nbsp;Scientific ML&nbsp;&nbsp;&middot;&nbsp;&nbsp;Physics-Informed ML&nbsp;&nbsp;&middot;&nbsp;&nbsp;HPC
+        CFD&nbsp;&nbsp;·&nbsp;&nbsp;Scientific ML&nbsp;&nbsp;·&nbsp;&nbsp;Physics-Informed AI&nbsp;&nbsp;·&nbsp;&nbsp;HPC
       </p>
 
       <p class="hero-bio">
         MSc Computational Fluid Dynamics candidate at Cranfield University, on track
         for distinction. I build the pipeline between high-fidelity simulation and
-        machine learning, designing custom ML systems from first principles at the
+        machine learning, designing custom AI systems from first principles at the
         intersection of physics and data.
       </p>
 
       <div class="hero-ctas">
         <a
-          href="https://github.com/tbofficial0508-jpg"
+          href="https://github.com/ThatoBaruti619"
           class="btn btn-primary"
           target="_blank"
           rel="noopener"
@@ -75,12 +121,6 @@
           target="_blank"
           rel="noopener"
         >Connect on LinkedIn</a>
-        <a
-          href="cv/Thato_Baruti_Master_CV_2026.pdf"
-          class="btn btn-outline"
-          target="_blank"
-          rel="noopener"
-        >Download CV</a>
       </div>
 
       <a href="mailto:tbofficial0508@gmail.com" class="hero-email">
@@ -88,6 +128,7 @@
       </a>
     </div>
 
+    <!-- Right: full-height photo panel -->
     <div class="hero-photo-wrap" aria-hidden="true">
       <img
         src="grad%20immage.jpg"
@@ -99,54 +140,58 @@
       <div class="photo-accent-v"></div>
       <div class="photo-accent-h"></div>
     </div>
+
   </section>
 
+  <!-- ══════════════════════════════════════
+       SKILLS TICKER
+  ══════════════════════════════════════ -->
   <div class="ticker-band" aria-hidden="true">
     <div class="ticker-track">
-      <span>CFD</span><span class="dot">&middot;</span>
-      <span>OpenFOAM</span><span class="dot">&middot;</span>
-      <span>ANSYS Fluent</span><span class="dot">&middot;</span>
-      <span>UCNS3D</span><span class="dot">&middot;</span>
-      <span>PyTorch</span><span class="dot">&middot;</span>
-      <span>PINNs</span><span class="dot">&middot;</span>
-      <span>DGCNN</span><span class="dot">&middot;</span>
-      <span>PhysicsNeMo</span><span class="dot">&middot;</span>
-      <span>HPC</span><span class="dot">&middot;</span>
-      <span>Turbulence Modelling</span><span class="dot">&middot;</span>
-      <span>Python</span><span class="dot">&middot;</span>
-      <span>C++</span><span class="dot">&middot;</span>
-      <span>FastAPI</span><span class="dot">&middot;</span>
-      <span>Uncertainty</span><span class="dot">&middot;</span>
-      <span>ClusterCount-AI4S</span><span class="dot">&middot;</span>
-      <span>Fidelity Pointwise</span><span class="dot">&middot;</span>
-      <span>DNS Pipelines</span><span class="dot">&middot;</span>
-      <span>Tecplot</span><span class="dot">&middot;</span>
-      <span>CFD</span><span class="dot">&middot;</span>
-      <span>OpenFOAM</span><span class="dot">&middot;</span>
-      <span>ANSYS Fluent</span><span class="dot">&middot;</span>
-      <span>UCNS3D</span><span class="dot">&middot;</span>
-      <span>PyTorch</span><span class="dot">&middot;</span>
-      <span>PINNs</span><span class="dot">&middot;</span>
-      <span>DGCNN</span><span class="dot">&middot;</span>
-      <span>PhysicsNeMo</span><span class="dot">&middot;</span>
-      <span>HPC</span><span class="dot">&middot;</span>
-      <span>Turbulence Modelling</span><span class="dot">&middot;</span>
-      <span>Python</span><span class="dot">&middot;</span>
-      <span>C++</span><span class="dot">&middot;</span>
-      <span>FastAPI</span><span class="dot">&middot;</span>
-      <span>Uncertainty</span><span class="dot">&middot;</span>
-      <span>ClusterCount-AI4S</span><span class="dot">&middot;</span>
-      <span>Fidelity Pointwise</span><span class="dot">&middot;</span>
-      <span>DNS Pipelines</span><span class="dot">&middot;</span>
-      <span>Tecplot</span><span class="dot">&middot;</span>
+      <span>CFD</span><span class="dot">·</span>
+      <span>OpenFOAM</span><span class="dot">·</span>
+      <span>ANSYS Fluent</span><span class="dot">·</span>
+      <span>UCNS3D</span><span class="dot">·</span>
+      <span>PyTorch</span><span class="dot">·</span>
+      <span>PINNs</span><span class="dot">·</span>
+      <span>DGCNN</span><span class="dot">·</span>
+      <span>PhysicsNeMo</span><span class="dot">·</span>
+      <span>HPC</span><span class="dot">·</span>
+      <span>Turbulence Modelling</span><span class="dot">·</span>
+      <span>Python</span><span class="dot">·</span>
+      <span>C++</span><span class="dot">·</span>
+      <span>Fidelity Pointwise</span><span class="dot">·</span>
+      <span>DNS Pipelines</span><span class="dot">·</span>
+      <span>Tecplot</span><span class="dot">·</span>
+      <!-- Mirror for seamless loop -->
+      <span>CFD</span><span class="dot">·</span>
+      <span>OpenFOAM</span><span class="dot">·</span>
+      <span>ANSYS Fluent</span><span class="dot">·</span>
+      <span>UCNS3D</span><span class="dot">·</span>
+      <span>PyTorch</span><span class="dot">·</span>
+      <span>PINNs</span><span class="dot">·</span>
+      <span>DGCNN</span><span class="dot">·</span>
+      <span>PhysicsNeMo</span><span class="dot">·</span>
+      <span>HPC</span><span class="dot">·</span>
+      <span>Turbulence Modelling</span><span class="dot">·</span>
+      <span>Python</span><span class="dot">·</span>
+      <span>C++</span><span class="dot">·</span>
+      <span>Fidelity Pointwise</span><span class="dot">·</span>
+      <span>DNS Pipelines</span><span class="dot">·</span>
+      <span>Tecplot</span><span class="dot">·</span>
     </div>
   </div>
 
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
   <section class="about" id="about">
     <div class="container">
       <p class="section-label reveal">About</p>
 
       <div class="about-grid">
+
+        <!-- Left: bio text -->
         <div class="about-text">
           <h2 class="about-heading reveal">
             Where physics<br />meets intelligence.
@@ -155,24 +200,22 @@
             I am an aerospace-trained engineer with deep expertise in computational
             fluid dynamics, turbulence modelling, and scientific machine learning.
             Currently completing my MSc in CFD at Cranfield, I design and build
-            custom ML systems in PyTorch and PyTorch Geometric: graph neural
-            networks, physics-informed models, calibrated validation workflows, and
-            deployment-facing tools.
+            custom ML architectures from scratch in PyTorch: physics-informed neural
+            networks and graph neural networks with embedded physics operators.
           </p>
           <p class="about-para reveal">
-            My work spans the full engineering and ML stack: from CAD geometry and mesh
+            My work spans the full engineering and AI stack: from CAD geometry and mesh
             generation through HPC solver execution, data extraction, and model
-            training, through to FastAPI/Gradio prototypes and evidence reports. I
-            approach hard problems with scientific rigour and build solutions that
-            show their assumptions, failure modes, and decision value.
+            training. I approach hard problems with scientific rigour and build
+            solutions that work at scale.
           </p>
           <p class="about-para reveal">
-            Actively seeking roles across scientific ML, applied AI, CFD engineering,
-            simulation, optimisation, engineering AI platforms, and data-heavy
-            technical teams where trust and usefulness matter as much as model score.
+            Actively seeking roles in CFD engineering, scientific ML, and simulation
+            driven by AI across automotive, aerospace, and quantitative research.
           </p>
         </div>
 
+        <!-- Right: grad photo + stat cards -->
         <div class="about-right">
           <div class="about-photo reveal">
             <img
@@ -192,213 +235,48 @@
           <div class="about-stats">
             <div class="stat-card reveal">
               <span class="stat-num">MSc</span>
-              <span class="stat-label">CFD &middot; Cranfield University</span>
+              <span class="stat-label">CFD · Cranfield University</span>
             </div>
             <div class="stat-card reveal">
               <span class="stat-num">BEng</span>
-              <span class="stat-label">Aerospace &middot; Sheffield</span>
+              <span class="stat-label">Aerospace · Sheffield</span>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <section class="cv-section" id="cv">
-    <div class="container">
-      <p class="section-label reveal">CV Snapshot</p>
-      <div class="cv-head">
-        <h2 class="cv-heading reveal">The fuller story<br />behind the CV.</h2>
-        <p class="cv-intro reveal">
-          My profile is not one narrow lane. It is a practical intersection of AI,
-          simulation, validation, and technical leadership. The downloadable CV gives
-          the formal version; this page shows the proof behind it.
-        </p>
-      </div>
-
-      <div class="cv-grid">
-        <article class="cv-panel cv-download reveal">
-          <p class="cv-panel-kicker">Master CV</p>
-          <h3>Three-page general CV for AI, CFD, simulation, and engineering roles.</h3>
-          <p>
-            Built as a robust master version rather than a compressed two-page role
-            variant. It covers my education, work-authorisation note, scientific ML,
-            CFD validation, optimisation, product-facing AI, and leadership evidence.
-          </p>
-          <div class="cv-actions">
-            <a
-              href="cv/Thato_Baruti_Master_CV_2026.pdf"
-              class="btn btn-primary"
-              target="_blank"
-              rel="noopener"
-            >Open Master CV</a>
-            <a
-              href="cv/Thato_Baruti_Master_CV_2026.pdf"
-              class="btn btn-outline"
-              download
-            >Download PDF</a>
-          </div>
-        </article>
-
-        <article class="cv-panel reveal">
-          <p class="cv-panel-kicker">Target lanes</p>
-          <ul class="cv-list">
-            <li>Scientific ML and AI-for-science engineering</li>
-            <li>Applied ML for simulation, CAE, CAD, and aerospace</li>
-            <li>CFD, aerodynamics, and high-fidelity validation</li>
-            <li>Surrogate modelling, digital twins, optimisation, and UQ</li>
-            <li>AI product prototyping for technical and business users</li>
-          </ul>
-        </article>
-
-        <article class="cv-panel reveal">
-          <p class="cv-panel-kicker">Proof pillars</p>
-          <ul class="cv-list">
-            <li>ClusterCount-AI4S: biomedical counting under domain shift</li>
-            <li>AeroGenic: graph, polar, and hybrid aerodynamic surrogates</li>
-            <li>OpenFOAM RANS validation and residual correction</li>
-            <li>63,393-design Pareto optimisation and CFD re-simulation queue</li>
-            <li>FastAPI, Gradio-style demos, reports, warnings, and traceability</li>
-          </ul>
-        </article>
-
-        <article class="cv-panel reveal">
-          <p class="cv-panel-kicker">Operating style</p>
-          <ul class="cv-list">
-            <li>Builds from first principles, then validates against baselines</li>
-            <li>Explains assumptions, uncertainty, and failure regimes clearly</li>
-            <li>Moves between code, physics, reports, and stakeholder language</li>
-            <li>Comfortable leading small technical teams under deadlines</li>
-            <li>Fast learner, but strict about not overclaiming evidence</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="cv-metrics">
-        <div class="cv-metric reveal">
-          <span class="cv-metric-value">87%</span>
-          <span class="cv-metric-label">Cranfield data analysis and post-processing</span>
-        </div>
-        <div class="cv-metric reveal">
-          <span class="cv-metric-value">4.67%</span>
-          <span class="cv-metric-label">ClusterCount synthetic held-out MAPE</span>
-        </div>
-        <div class="cv-metric reveal">
-          <span class="cv-metric-value">2.87%</span>
-          <span class="cv-metric-label">AeroGenic champion weighted MAPE</span>
-        </div>
-        <div class="cv-metric reveal">
-          <span class="cv-metric-value">12</span>
-          <span class="cv-metric-label">Largest team led from concept to prototype</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
+  <!-- ══════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════ -->
   <section class="projects" id="projects">
     <div class="container">
       <p class="section-label reveal">Projects</p>
-      <h2 class="projects-heading reveal">Selected Engineering<br />&amp; ML Work.</h2>
-
-      <article class="project-feature reveal">
-        <div class="project-feature-copy">
-          <p class="project-feature-kicker">Featured ML-for-science build</p>
-          <h3 class="project-feature-title">ClusterCount-AI4S</h3>
-          <p class="project-feature-desc">
-            A validation-first biomedical image-analysis prototype for automated cell
-            counting in dense and blurred microscopy. It combines a density-map CNN,
-            calibrated patchwise inference, a watershed baseline, uncertainty flags,
-            auditable overlays, Docker packaging, tests, and CI so counts are
-            inspectable rather than black-box.
-          </p>
-          <p class="project-feature-proof">
-            Built as a reproducible benchmark around clustering, blur, and domain
-            shift, with controlled synthetic validation and external stress testing
-            on fluorescence microscopy from <code>S-BSST265</code>.
-          </p>
-
-          <div class="project-feature-metrics">
-            <div class="feature-metric">
-              <span class="feature-metric-value">4.67%</span>
-              <span class="feature-metric-label">Held-out synthetic MAPE</span>
-            </div>
-            <div class="feature-metric">
-              <span class="feature-metric-value">34.3%</span>
-              <span class="feature-metric-label">Calibrated external MAPE</span>
-            </div>
-            <div class="feature-metric">
-              <span class="feature-metric-value">Audit-ready</span>
-              <span class="feature-metric-label">Docker, CI, tests, overlays</span>
-            </div>
-          </div>
-
-          <div class="project-feature-actions">
-            <a
-              href="https://github.com/tbofficial0508-jpg/cluster-count-ai4s"
-              class="btn btn-primary"
-              target="_blank"
-              rel="noopener"
-            >View Repository</a>
-            <a
-              href="https://github.com/tbofficial0508-jpg/cluster-count-ai4s/blob/main/report/cluster_count_ai4s_summary.pdf"
-              class="btn btn-outline"
-              target="_blank"
-              rel="noopener"
-            >Read Summary Report</a>
-          </div>
-        </div>
-
-        <div class="project-feature-media">
-          <figure class="cluster-shot">
-            <img
-              src="media/clustercount-dense-overlay.png"
-              alt="Dense microscopy cluster overlay from ClusterCount-AI4S"
-              loading="lazy"
-            />
-            <figcaption>
-              <span>Dense fluorescence field</span>
-              <strong>363 true &middot; 359.5 predicted</strong>
-            </figcaption>
-          </figure>
-          <figure class="cluster-shot">
-            <img
-              src="media/clustercount-precision-overlay.png"
-              alt="Microscopy overlay showing accurate held-out count from ClusterCount-AI4S"
-              loading="lazy"
-            />
-            <figcaption>
-              <span>Held-out microscopy field</span>
-              <strong>41 true &middot; 39.7 predicted</strong>
-            </figcaption>
-          </figure>
-        </div>
-      </article>
+      <h2 class="projects-heading reveal">MSc Research<br />at Cranfield.</h2>
 
       <div class="projects-grid">
+
+        <!-- 01 -->
         <article class="project-card reveal">
           <div class="project-card-inner">
             <div class="project-top">
               <span class="project-num">01</span>
               <div class="project-tags">
-                <span>UCNS3D</span>
-                <span>Fortran</span>
-                <span>HLL/HLLC</span>
-                <span>MUSCL</span>
+                <span>AeroGenic</span><span>PyTorch</span><span>OpenFOAM</span><span>FastAPI</span>
               </div>
             </div>
-            <h3 class="project-title">Godunov Compressible<br />Flow Solver</h3>
-            <p class="project-desc">
-              Benchmarked Godunov-type finite-volume methods for 1D and 2D compressible
-              Euler equations. Extended a Fortran solver with second-order MUSCL
-              reconstruction and HLL/HLLC Riemann solvers. Validated against Mach 3
-              forward-facing step and double Mach reflection on unstructured meshes in UCNS3D.
+            <h3>Aerodynamic surrogate and optimisation platform</h3>
+            <p>
+              Built a research platform around graph surrogates, physics-structured polar models,
+              RANS correction, conformal uncertainty, Pareto optimisation, and deployment-facing
+              wing-design APIs.
             </p>
-            <div class="project-footer">
-              <span class="project-module">Numerical Methods for Compressible Flows</span>
-            </div>
-          </div>
-        </article>
+            <p class="project-result">Result: current champion ensemble reports 2.87% deployment-weighted held-out MAPE under current target weights.</p>
+          </article>
 
+        <!-- 02 -->
         <article class="project-card reveal">
           <div class="project-card-inner">
             <div class="project-top">
@@ -406,64 +284,68 @@
               <div class="project-tags">
                 <span>Fidelity Pointwise</span>
                 <span>RANS</span>
-                <span>k-&omega; SST</span>
-                <span>y<sup>+</sup>&asymp;1</span>
+                <span>k-ω SST</span>
+                <span>y⁺≈1</span>
               </div>
             </div>
             <h3 class="project-title">NASA Trap Wing<br />High-Quality Grid</h3>
             <p class="project-desc">
               Generated a high-fidelity unstructured hybrid mesh for the NASA Trapezoidal
               High-Lift Wing following HiLiftPW-1 workshop guidelines at
-              Re&nbsp;=&nbsp;9.5&times;10<sup>6</sup>. Targeted wall-resolved RANS with
-              y<sup>+</sup>&nbsp;&asymp;&nbsp;1, structured boundary-layer inflation, and
-              wake-region refinement for accurate high-lift flow prediction.
+              Re&nbsp;=&nbsp;9.5×10⁶. Targeted wall-resolved RANS with y⁺&nbsp;≈&nbsp;1,
+              structured boundary-layer inflation, and wake-region refinement for
+              accurate high-lift flow prediction.
             </p>
-            <div class="project-footer">
-              <span class="project-module">Grid Generation</span>
-            </div>
-          </div>
-        </article>
+            <p class="project-result">Result: 26 strict-pass CFD evidence cases in the current returned validation subset.</p>
+          </article>
 
+        <!-- 03 -->
         <article class="project-card reveal">
           <div class="project-card-inner">
             <div class="project-top">
               <span class="project-num">03</span>
               <div class="project-tags">
-                <span>DNS</span>
-                <span>MATLAB</span>
-                <span>FFT</span>
-                <span>Neural Networks</span>
+                <span>UCNS3D</span><span>Fortran</span><span>HLL/HLLC</span><span>MUSCL</span>
               </div>
             </div>
             <h3 class="project-title">DNS Turbulent Channel<br />Flow Analysis</h3>
             <p class="project-desc">
               Processed high-fidelity DNS data of fully developed turbulent channel flow
-              at Re<sub>&tau;</sub>&nbsp;&asymp;&nbsp;180. Computed turbulence statistics
-              (RMS, skewness, kurtosis), performed FFT spectral analysis, and implemented
-              a feed-forward neural network to map velocity fields between instantaneous
+              at Re<sub>τ</sub>&nbsp;≈&nbsp;180. Computed turbulence statistics (RMS,
+              skewness, kurtosis), performed FFT spectral analysis, and implemented a
+              feed-forward neural network to map velocity fields between instantaneous
               spanwise planes, benchmarked against Lee &amp; Moser (2015).
             </p>
-            <div class="project-footer">
-              <span class="project-module">Data Analysis &amp; Post-Processing</span>
-              <span class="project-grade">87%</span>
-            </div>
-          </div>
-        </article>
+            <p class="project-result">Validated against Mach 3 forward-facing step and double Mach reflection cases.</p>
+          </article>
 
+        <!-- 04 -->
         <article class="project-card reveal">
           <div class="project-card-inner">
             <div class="project-top">
               <span class="project-num">04</span>
               <div class="project-tags">
-                <span>ANSYS Fluent</span>
-                <span>MATLAB</span>
-                <span>SIMPLE</span>
-                <span>PISO</span>
+                <span>Pointwise</span><span>RANS</span><span>High lift</span><span>Grid generation</span>
+              </div>
+            </div>
+            <h3>NASA trapezoidal wing high-quality grid</h3>
+            <p>
+              Generated an unstructured hybrid mesh following HiLiftPW-1 guidelines, targeting
+              wall-resolved RANS with boundary-layer inflation and wake-region refinement.
+            </p>
+            <p class="project-result">Built for Re = 9.5e6 high-lift prediction with y+ near 1 target.</p>
+          </article>
+
+          <article class="project-card reveal" data-type="ml cfd">
+            <div class="project-top">
+              <span class="project-num">05</span>
+              <div class="project-tags">
+                <span>DNS</span><span>MATLAB</span><span>FFT</span><span>Neural networks</span>
               </div>
             </div>
             <h3 class="project-title">Laminar Flow CFD<br />vs Analytical Solution</h3>
             <p class="project-desc">
-              Derived the analytical Poiseuille velocity profile from the Navier-Stokes
+              Derived the analytical Poiseuille velocity profile from the Navier–Stokes
               equations and validated against ANSYS Fluent simulations across three mesh
               densities at Re&nbsp;=&nbsp;15. Benchmarked SIMPLE, SIMPLEC, PISO, and
               COUPLE pressure-velocity coupling algorithms; confirmed second-order
@@ -475,10 +357,14 @@
             </div>
           </div>
         </article>
+
       </div>
     </div>
   </section>
 
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
   <section class="contact" id="contact">
     <div class="container">
       <p class="section-label reveal">Connect</p>
@@ -486,7 +372,7 @@
 
       <div class="contact-grid">
         <a
-          href="https://github.com/tbofficial0508-jpg"
+          href="https://github.com/ThatoBaruti619"
           class="contact-card reveal"
           target="_blank"
           rel="noopener"
@@ -506,7 +392,7 @@
             </svg>
           </div>
           <span class="card-label">GitHub</span>
-          <span class="card-sub">github.com/tbofficial0508-jpg</span>
+          <span class="card-sub">github.com/ThatoBaruti619</span>
         </a>
 
         <a
@@ -526,33 +412,15 @@
               23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
             </svg>
           </div>
-          <span class="card-label">LinkedIn</span>
-          <span class="card-sub">Professional Profile</span>
-        </a>
-
-        <a
-          href="mailto:tbofficial0508@gmail.com"
-          class="contact-card reveal"
-        >
-          <div class="card-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-          </div>
-          <span class="card-label">Email</span>
-          <span class="card-sub">tbofficial0508@gmail.com</span>
-        </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container footer-inner">
       <span class="footer-name">THATO BARUTI</span>
-      <span class="footer-copy">&copy; 2026 Thato Baruti. All rights reserved.</span>
+      <span class="footer-copy">&copy; 2026 Thato Baruti. CFD - Scientific ML - Engineering AI.</span>
     </div>
   </footer>
 

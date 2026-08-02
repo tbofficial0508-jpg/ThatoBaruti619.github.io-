@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tbofficial0508-jpg.github.io/ThatoBaruti619.github.io-/sitemap.xml
