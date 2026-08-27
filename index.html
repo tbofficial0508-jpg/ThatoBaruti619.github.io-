@@ -58,8 +58,9 @@
       <p class="hero-bio">
         MSc Computational Fluid Dynamics candidate at Cranfield University, on track
         for distinction. I build validated AI-for-engineering tools that connect
-        geometry, CFD, uncertainty, optimisation, and deployment, from physics-informed
-        wing surrogates to open-source scientific solvers.
+        geometry, CFD, uncertainty, optimisation, and deployment, including PiSA:
+        a SAAB BlueBear-sponsored physics-informed surrogate for inverse 3D UAV
+        wing optimisation.
       </p>
 
       <div class="hero-ctas">
@@ -165,6 +166,13 @@
             and model training, through to FastAPI/Gradio prototypes and evidence reports.
             I approach hard problems with scientific rigour and build solutions that show
             their assumptions, failure modes, and decision value.
+          </p>
+          <p class="about-para reveal">
+            My MSc thesis, PiSA, was presented at SAAB UK offices after a four-month
+            SAAB BlueBear-sponsored research project supervised industrially by Vasile
+            Tanasa and academically by Dr Laszlo Konozsy and Dr Dmitry Ignatyev. The
+            work focuses on fast, evidence-supported aero-structural prediction for 3D
+            UAV wing optimisation.
           </p>
           <p class="about-para reveal">
             Actively seeking roles across scientific ML, applied AI, CFD engineering,
@@ -374,6 +382,41 @@
         </div>
       </article>
 
+      <article class="saab-feature reveal">
+        <div class="saab-feature-image">
+          <img
+            src="saab_presentationpicture.jpg"
+            alt="Thato Baruti beside the SAAB logo after presenting the PiSA MSc thesis work"
+            loading="lazy"
+          />
+        </div>
+        <div class="saab-feature-copy">
+          <p class="project-feature-kicker">SAAB BlueBear-sponsored MSc research</p>
+          <h3 class="project-feature-title">PiSA for 3D UAV Wing Optimisation</h3>
+          <p class="project-feature-desc">
+            Presented at SAAB UK offices to SAAB engineers, PhD students, postdoctoral
+            researchers and executives. PiSA is a physics-informed surrogate algorithm
+            for inverse 3D UAV wing optimisation, built to make aerodynamic and
+            structural prediction fast enough for design loops while keeping pressure
+            fields, uncertainty and validation evidence visible.
+          </p>
+          <div class="project-feature-metrics saab-metrics">
+            <div class="feature-metric">
+              <span class="feature-metric-value">0.16 ms</span>
+              <span class="feature-metric-label">GPU inference per design</span>
+            </div>
+            <div class="feature-metric">
+              <span class="feature-metric-value">76%</span>
+              <span class="feature-metric-label">Drag/lift accuracy gain vs panel baseline</span>
+            </div>
+            <div class="feature-metric">
+              <span class="feature-metric-value">7.6%</span>
+              <span class="feature-metric-label">Held-out RANS surface-pressure recovery</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
       <div class="projects-grid">
         <article class="project-card reveal">
           <div class="project-card-inner">
@@ -388,10 +431,11 @@
             </div>
             <h3 class="project-title">AeroGenic Platform<br />&amp; PiSA Surrogate</h3>
             <p class="project-desc">
-              Thesis engineering-tool deployment for a physics-informed surrogate algorithm
-              supporting inverse-design optimisation of 3D UAV wings. It connects parametric
-              geometry, aerodynamic data, graph-style ML, uncertainty, residual correction,
-              OpenFOAM RANS validation, and FastAPI/Gradio deployment.
+              Engineering-tool deployment of my MSc thesis model: a physics-informed
+              surrogate algorithm for inverse-design optimisation of 3D UAV wings. It
+              connects parametric geometry, graph-style pressure prediction, residual
+              correction, uncertainty, OpenFOAM/RANS validation, GPU inference, and
+              FastAPI/Gradio deployment.
             </p>
             <div class="project-footer">
               <span class="project-module">0.16 ms GPU inference</span>

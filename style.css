@@ -961,6 +961,74 @@ body {
   align-self: stretch;
 }
 
+.saab-feature {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
+  gap: 2rem;
+  align-items: stretch;
+  margin: 1.4rem 0;
+  padding: 1.1rem;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(3, 122, 104, 0.18), transparent 36%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.035), rgba(0, 36, 32, 0.38));
+  border: 1px solid var(--border);
+  border-radius: 3px;
+}
+
+.saab-feature::before {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--green-accent), transparent);
+  opacity: 0.75;
+}
+
+.saab-feature:hover {
+  border-color: var(--border-hover);
+}
+
+.saab-feature-image {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  background: #050a09;
+}
+
+.saab-feature-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 54%, rgba(10, 15, 14, 0.42)),
+    linear-gradient(90deg, rgba(3, 122, 104, 0.08), transparent 42%);
+  pointer-events: none;
+}
+
+.saab-feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.92) contrast(1.03);
+}
+
+.saab-feature-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0.7rem 1rem 0;
+}
+
+.saab-metrics {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .cluster-shot {
   overflow: hidden;
   display: flex;
@@ -1301,6 +1369,23 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .saab-feature {
+    grid-template-columns: 1fr;
+    padding: 0.9rem;
+  }
+
+  .saab-feature-image {
+    min-height: 320px;
+  }
+
+  .saab-feature-copy {
+    padding: 0.9rem 0.2rem 0.35rem;
+  }
+
+  .saab-metrics {
+    grid-template-columns: 1fr;
+  }
+
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -1348,6 +1433,10 @@ body {
   }
 
   .about-stats { grid-template-columns: 1fr 1fr; }
+
+  .saab-feature-image {
+    min-height: 260px;
+  }
 
   .footer-inner {
     flex-direction: column;
