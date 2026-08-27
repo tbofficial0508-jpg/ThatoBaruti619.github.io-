@@ -994,7 +994,6 @@ body {
   position: relative;
   overflow: hidden;
   min-height: 0;
-  aspect-ratio: 800 / 487;
   align-self: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 3px;
@@ -1012,10 +1011,9 @@ body {
 }
 
 .saab-feature-image img {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  height: auto;
   filter: saturate(0.92) contrast(1.03);
 }
 
@@ -1039,7 +1037,9 @@ body {
   align-content: stretch;
 }
 
+.cluster-shot,
 .daap-shot {
+  margin: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1050,6 +1050,8 @@ body {
 }
 
 .daap-shot img {
+  box-sizing: border-box;
+  display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: contain;
@@ -1076,17 +1078,8 @@ body {
   text-align: right;
 }
 
-.cluster-shot {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 3px;
-}
-
 .cluster-shot img {
+  display: block;
   width: 100%;
   aspect-ratio: 1 / 1.08;
   object-fit: cover;
