@@ -967,7 +967,7 @@ body {
   display: grid;
   grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
   gap: 2rem;
-  align-items: stretch;
+  align-items: center;
   margin: 1.4rem 0;
   padding: 1.1rem;
   background:
@@ -993,7 +993,9 @@ body {
 .saab-feature-image {
   position: relative;
   overflow: hidden;
-  min-height: 420px;
+  min-height: 0;
+  aspect-ratio: 800 / 487;
+  align-self: center;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 3px;
   background: #050a09;
@@ -1012,7 +1014,7 @@ body {
 .saab-feature-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   filter: saturate(0.92) contrast(1.03);
 }
@@ -1027,6 +1029,51 @@ body {
 
 .saab-metrics {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.daap-feature {
+  margin-top: 1.4rem;
+}
+
+.daap-media {
+  align-content: stretch;
+}
+
+.daap-shot {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+}
+
+.daap-shot img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  object-position: center;
+  padding: 0.55rem;
+  background: #050a09;
+}
+
+.daap-shot figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0.8rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.daap-shot strong {
+  color: var(--cream);
+  font-weight: 700;
+  text-align: right;
 }
 
 .cluster-shot {
@@ -1375,7 +1422,7 @@ body {
   }
 
   .saab-feature-image {
-    min-height: 320px;
+    min-height: 0;
   }
 
   .saab-feature-copy {
@@ -1435,7 +1482,7 @@ body {
   .about-stats { grid-template-columns: 1fr 1fr; }
 
   .saab-feature-image {
-    min-height: 260px;
+    min-height: 0;
   }
 
   .footer-inner {
